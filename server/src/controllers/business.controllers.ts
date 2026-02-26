@@ -63,7 +63,7 @@ export class ChannelController {
 
     const channels =   await channelService.getUserChannels(userId);
 
-    
+
     ResponseFormatter.success(res, channels, 'Channels retrieved successfully');
   });
 
@@ -88,6 +88,7 @@ export class ChannelController {
 
     await channelService.joinChannel(channelId, userId);
 
+    
     ResponseFormatter.success(res, null, 'Joined channel successfully');
   });
 

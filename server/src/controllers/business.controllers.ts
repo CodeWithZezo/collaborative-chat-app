@@ -61,8 +61,9 @@ export class ChannelController {
   getUserChannels = asyncHandler(async (req: Request, res: Response): Promise<void> => {
     const userId = req.user!.userId;
 
-    const channels = await channelService.getUserChannels(userId);
+    const channels =   await channelService.getUserChannels(userId);
 
+    
     ResponseFormatter.success(res, channels, 'Channels retrieved successfully');
   });
 

@@ -5,7 +5,7 @@ import { asyncHandler } from '../middlewares/error.middleware';
 import { PaginationUtil } from '../utils/pagination.util';
 
 /**
- * Message Controller
+ * Message Controller   
  */
 export class MessageController {
   sendMessage = asyncHandler(async (req: Request, res: Response): Promise<void> => {

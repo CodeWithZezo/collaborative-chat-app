@@ -30,11 +30,10 @@ export class MessageController {
       { page: Number(page), limit: Number(limit), total: result.total },
       'Messages retrieved successfully'
     );
-  }); 
+  });     
 
 
 
-  
 
   deleteMessage = asyncHandler(async (req: Request, res: Response): Promise<void> => {
     const userId = req.user!.userId;

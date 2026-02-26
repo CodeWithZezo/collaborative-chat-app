@@ -88,7 +88,7 @@ export class ChannelController {
 
     await channelService.joinChannel(channelId, userId);
 
-    
+
     ResponseFormatter.success(res, null, 'Joined channel successfully');
   });
 
@@ -110,6 +110,7 @@ export class ChannelController {
     ResponseFormatter.success(res, channels, 'Channels retrieved successfully');
   });
 }
+
 
 /**
  * Task Controller
